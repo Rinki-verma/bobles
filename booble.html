@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+     
+      .outer {
+        max-width: 100%;
+        background-color: #4991d3;
+        height: 100vh;
+        overflow: hidden;
+
+      }
+      ul {
+        display: flex;
+        padding: 40px;
+        box-sizing: border-box;
+        justify-content: space-around;
+        list-style: none;
+      }
+      ul li {
+        transform: translateY(800px);
+      }
+
+      ul li:nth-child(1) {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 13s 5s infinite linear;
+
+
+      }
+      ul li:nth-child(1)::after {
+        content: "";
+        width: 35px;
+        height: 26px;
+        position: absolute;
+        left: 30px;
+        top: 23px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(4px);
+        display: block;
+        transform: rotate(150deg);
+
+      }
+
+      ul li:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 4s infinite linear;
+
+      }
+
+      ul li:nth-child(2)::after {
+        content: "";
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        left: 13px;
+        top: 7px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(3px);
+        display: block;
+        transform: rotate(150deg);
+
+      }
+
+      ul li:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 17s  7s infinite linear;
+
+      }
+      ul li:nth-child(3)::after {
+        content: "";
+        width: 35px;
+        height: 26px;
+        position: absolute;
+        left: 22px;
+        top: 16px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(4px);
+        display: block;
+        transform: rotate(150deg);
+
+      }
+      ul li:nth-child(4) {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 17s 10s infinite linear;
+
+      }
+
+      ul li:nth-child(4)::after {
+        content: "";
+        width: 50px;
+        height: 33px;
+        position: absolute;
+        left: 38px;
+        top: 30px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(4px);
+        display: block;
+        transform: rotate(150deg);
+      }
+      
+     ul li:nth-child(5) {
+        width: 130px;
+        height: 130px;
+        /* border: 1px solid red; */
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 7s 1s infinite linear;
+
+      }
+       ul li:nth-child(5)::after {
+        content: "";
+        width: 35px;
+        height: 26px;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(6px);
+        display: block;
+        transform: rotate(150deg);
+
+
+      } 
+      ul li:nth-child(6) {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow:
+          inset 0px 0px 25px 1px rgba(26, 190, 232, 0.4),
+          inset -5px -10px 35px 1px rgba(255, 255, 255, 0.777);
+        position: relative;
+        animation: bobls 6s infinite linear;
+      }
+        ul li:nth-child(6)::after {
+        content: "";
+        width: 19px;
+        height: 13px;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        border-radius: 50%;
+        background-color: white;
+        filter: blur(4px);
+        display: block;
+        transform: rotate(150deg);
+
+      }
+
+      @keyframes bobls {
+        100%{
+            transform: translateY(-800px);
+        }
+      }
+    </style>
+    <style>
+
+      @media only screen and (min-width: 376px ) and (max-width: 425px){
+         ul li:nth-child(4),ul li:nth-child(1){
+          display: none;
+         }
+      }
+      @media only screen and (min-width: 321px ) and (max-width: 375px){
+        ul li:nth-child(4),ul li:nth-child(1){
+          display: none;
+         }
+      }
+      @media only screen and (max-width: 320px) {
+         ul li:nth-child(4),ul li:nth-child(1){
+          display: none;
+         }
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>
